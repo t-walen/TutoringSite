@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -30,4 +31,50 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+.fadeIn {
+  opacity: 1;
+  animation: fadeIn 6s;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+.list-with-checkmark {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.list-with-checkmark li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.list-with-checkmark li::before {
+  content: '\2713';
+  margin-right: 8px;
+  color: green;
+  font-size: 2rem;
 }

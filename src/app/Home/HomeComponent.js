@@ -21,7 +21,7 @@ export default function HomeComponent() {
           <p className="text-center text-4xl text-brown font-bold fadeIn">
             <span className="block" style={{ textAlign: 'left' }}>Tutoring</span>
             <span className="block" style={{ textAlign: 'left' }}>that will boost</span>
-            <span className="block" style={{ textAlign: 'left' }}>confidence &apos; grades</span>
+            <span className="block" style={{ textAlign: 'left' }}>confidence &amp; grades</span>
           </p>
         </div>
         <div className="relative">
